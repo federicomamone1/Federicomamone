@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Federico Mamone Aviation Management</title>
+<meta name="description" content="Federico Mamone is an Aviation Management student at Jacksonville University (Airline Management track, minor in Applied Economics), bilingual in Spanish and English, seeking a Summer 2027 airline or airport internship.">
+<meta name="keywords" content="Federico Mamone, aviation management, airline management, Jacksonville University, airline internship, airport internship, Summer 2027 internship, bilingual Spanish English, NASA Human Lander Challenge">
+<meta name="author" content="Federico Mamone">
+<meta property="og:title" content="Federico Mamone, Aviation Management Student">
+<meta property="og:description" content="Aviation Management student at Jacksonville University seeking a Summer 2027 airline or airport internship.">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Federico Mamone","jobTitle":"Aviation Management Student","affiliation":{"@type":"CollegeOrUniversity","name":"Jacksonville University"},"nationality":"Uruguay","knowsLanguage":["Spanish","English"],"address":{"@type":"PostalAddress","addressLocality":"Jacksonville","addressRegion":"FL","addressCountry":"US"},"email":"mailto:fmamone@jacksonville.edu","knowsAbout":["Airline management","Airport operations","Aviation weather","Applied economics","Cryogenic propellant storage","Spaceflight"]}
+</script>
+<style>
+/* VOICE personal website, confident and clean, an illustrated poster for one person
+   IDEA an airline boarding pass: his career as a flight from Uruguay to Jacksonville, now boarding internships
+   PICTURE an airliner climbing over an airport, Uruguay's Sun of May in the sky, plus the boarding pass card
+   COLOUR Uruguayan sky blue fields, deep blue ink, white, Sun of May gold as the one accent
+   TYPE Barlow Condensed (airport signage) + Barlow
+   LAYOUT laptop: name and pitch left, boarding pass right, scene strip full bleed below; phone: name, pass, scene, then sections */
+:root{color-scheme:light dark;
+--bg:light-dark(#ffffff,#08111f);--ink:light-dark(#0c2340,#e4edf8);--muted:light-dark(#46597a,#a9bad0);
+--pale:light-dark(#eaf3fd,#0d1b30);--card:light-dark(#ffffff,#112440);--line:light-dark(#cfdff2,#25406a);
+--sky1:light-dark(#1559c4,#081c3a);--sky2:light-dark(#4b98ea,#173f78);
+--far:light-dark(#8ec0f0,#1f4c86);--ground:light-dark(#0f4189,#0a2147);--runway:light-dark(#0a2c5e,#061631);
+--bldg:light-dark(#0c3570,#0b2a55);--glass:light-dark(#a9d5ff,#f7b500);
+--cloud:light-dark(#ffffff,#2a5590);--cloudsh:light-dark(#d4e5f8,#21497f);
+--gold:#f7b500;--accent:light-dark(#1559c4,#7fb6f2);--btnbg:light-dark(#1559c4,#f7b500);--btnfg:light-dark(#ffffff,#0c2340)}
+:root[data-theme=light]{color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Barlow,"Segoe UI",Arial,sans-serif;overflow-x:clip}
+img,svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",Arial,sans-serif;line-height:1.05;letter-spacing:-.01em;margin:0;text-wrap:balance}
+h2{font-size:clamp(34px,4.4vw,48px)}
+h3{font-size:24px}
+p{margin:0 0 14px}
+.wrap{max-width:1240px;margin-inline:auto}
+.band{padding-block:clamp(44px,6vw,84px);padding-inline:max(5vw,16px)}
+.intro{color:var(--muted);font-size:18px;max-width:40em;margin:10px 0 28px}
+.top{position:sticky;top:0;z-index:20;background:var(--sky1);color:#fff;padding-inline:max(5vw,16px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px;position:relative}
+.brand{font:700 22px/1 "Barlow Condensed",sans-serif;text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand i{width:32px;height:32px;border-radius:50%;background:var(--gold);color:#0c2340;display:grid;place-items:center;font-style:normal;font-size:15px}
+#site-nav{display:flex;gap:2px}
+#site-nav a{text-decoration:none;font-weight:600;padding:0 14px;border-radius:8px;min-height:44px;display:flex;align-items:center}
+#site-nav a:hover{background:rgba(255,255,255,.15)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+#menu-btn{display:none;width:44px;height:44px;border:2px solid rgba(255,255,255,.7);border-radius:10px;background:transparent;color:#fff;align-items:center;justify-content:center;cursor:pointer}
+.hero{background:linear-gradient(180deg,var(--sky1),var(--sky2));color:#fff;padding:clamp(36px,5vw,64px) max(5vw,16px) 0}
+.hero-top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,56px);align-items:center}
+.hero h1{font-size:clamp(52px,7.6vw,92px);line-height:.95}
+.lede{font-size:clamp(17px,1.6vw,20px);max-width:33em;margin:18px 0 26px;color:#f2f7ff}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border-radius:999px;font-weight:600;font-size:17px;text-decoration:none}
+.btn.primary{background:var(--gold);color:#0c2340}
+.btn.ghost{border:2px solid rgba(255,255,255,.85);color:#fff}
+.btn:hover{filter:brightness(1.06)}
+.pass{display:grid;grid-template-columns:minmax(0,1fr) 112px;background:#fff;color:#0c2340;border-radius:18px;overflow:hidden;box-shadow:0 12px 28px rgba(3,20,52,.25);width:100%;max-width:520px;justify-self:end}
+.pass-head{grid-column:1/-1;background:var(--gold);padding:10px 20px;display:flex;justify-content:space-between;align-items:center;font-weight:600}
+.pass-head svg{width:22px;height:22px}
+.pass-body{padding:18px 20px 20px}
+.route{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:12px}
+.route b{display:block;font:700 46px/1 "Barlow Condensed",sans-serif}
+.route small,.fields dt{font-size:13px;color:#4a5e7a}
+.route .to{text-align:right}
+.path{position:relative;border-top:2px dashed #9db4d4;height:0}
+.path svg{position:absolute;left:50%;top:-12px;width:22px;height:22px;transform:translateX(-50%) rotate(90deg);background:#fff;color:#1559c4}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 16px;margin:18px 0 0}
+.fields div.wide{grid-column:1/-1}
+.fields dd{margin:0;font-weight:600;line-height:1.3}
+.stub{border-left:2px dashed #b9cbe3;padding:18px 12px;display:flex;flex-direction:column;align-items:center;gap:14px;background:#f2f7ff}
+.photo{width:74px;height:74px;border-radius:50%;background:#0c2340;color:var(--gold);display:grid;place-items:center;font:700 30px "Barlow Condensed",sans-serif}
+.barcode{flex:1;width:54px;min-height:80px;background:repeating-linear-gradient(180deg,#0c2340 0 3px,transparent 3px 5px,#0c2340 5px 6px,transparent 6px 9px,#0c2340 9px 13px,transparent 13px 15px)}
+.stub small{font-size:13px;font-weight:600;text-align:center;line-height:1.25}
+.scene{margin:clamp(20px,3vw,36px) calc(-1 * max(5vw,16px)) 0;height:clamp(170px,23.3vw,360px);position:relative}
+.scene svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.bob{animation:bob 6s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-7px)}}
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start}
+.about p{font-size:17px;max-width:36em}
+.about h2{margin-bottom:18px}
+.bring{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.bring li{background:var(--pale);border-radius:14px;padding:18px}
+.bring svg{width:30px;height:30px;color:var(--accent);margin-bottom:8px}
+.bring h3{font-size:22px;margin-bottom:4px}
+.bring p{font-size:16px;margin:0;color:var(--muted)}
+.projects{background:var(--pale)}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.card-body{padding:22px;display:flex;flex-direction:column;flex:1}
+.thumb{margin:0;height:210px;background:#0c2340;border-bottom:1px solid var(--line)}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block}
+.thumb.paper{background:var(--pale);padding:20px 28px 0}
+.thumb.paper img{object-position:top;border-radius:6px 6px 0 0;box-shadow:0 2px 10px rgba(12,35,64,.18)}
+.thumb.qs{height:auto;min-height:210px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:16px}
+.q{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:10px 12px;color:#fff;font-size:14px;line-height:1.3}
+.q b{display:block;color:var(--gold);font:700 20px/1.1 "Barlow Condensed",sans-serif;margin-bottom:4px}
+.doc-btn{align-self:flex-start;display:inline-flex;align-items:center;min-height:44px;margin-top:18px;padding:0 20px;border-radius:999px;background:var(--btnbg);color:var(--btnfg);font-weight:600;text-decoration:none}
+.doc-btn:hover{filter:brightness(1.08)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btns .doc-btn{margin-top:0}
+.doc-btn.alt{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+.thumb.shot{background:#fff}
+.thumb.shot a{display:block;height:100%}
+.thumb.shot img{object-position:top}
+.card .course{font-size:14px;font-weight:600;color:var(--accent);margin-bottom:4px}
+.card h3{margin-bottom:10px}
+.card p{color:var(--muted);flex:1}
+.tags{list-style:none;padding:0;margin:4px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.tags li{font-size:14px;font-weight:600;padding:4px 12px;border-radius:999px;background:var(--pale)}
+.doc{border:1px solid var(--line);border-radius:16px;padding:clamp(22px,3.5vw,44px);display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);background:var(--card)}
+.doc h3{font-size:22px;padding-bottom:8px;border-bottom:2px solid var(--gold);margin:0 0 12px}
+.doc section+section{margin-top:28px}
+.doc ul{margin:0;padding-left:20px}
+.doc li{margin-bottom:6px}
+.school{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-weight:600;font-size:18px}
+.school span{white-space:nowrap;color:var(--muted);font-weight:500;font-size:16px}
+.contact{background:linear-gradient(180deg,var(--sky2),var(--sky1));color:#fff}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:center}
+.contact p{font-size:18px;color:#f2f7ff;max-width:30em}
+.rows{display:grid;gap:12px}
+.row{display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:14px;padding:14px 18px;min-height:64px}
+.row small{display:block;font-size:13px;color:#dce9fb}
+.row b{font-weight:600;font-size:18px}
+.row b a{text-decoration:none;overflow-wrap:anywhere}
+.row b a:hover{text-decoration:underline}
+.copy{flex:none;min-height:44px;padding:0 18px;border-radius:999px;border:2px solid rgba(255,255,255,.85);background:transparent;color:#fff;font:600 15px Barlow,Arial,sans-serif;cursor:pointer}
+.copy:hover{background:rgba(255,255,255,.15)}
+.doc p+.school{margin-top:14px}
+.doc ul+p,.doc p+ul{margin-top:8px}
+footer{background:var(--runway);color:#c9d8ee;padding:22px max(5vw,16px);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer a{text-decoration:none;margin-left:16px}
+footer a:first-child{margin-left:0}
+@media(max-width:820px){.hero-top{grid-template-columns:minmax(0,1fr)}.pass{justify-self:start}}
+@media(max-width:760px){.about,.contact .wrap,.doc{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){
+#menu-btn{display:flex}
+.thumb{height:180px}
+.thumb.qs{grid-template-columns:repeat(2,minmax(0,1fr))}
+#site-nav{display:none;position:absolute;top:64px;left:calc(-1 * max(5vw,16px));right:calc(-1 * max(5vw,16px));flex-direction:column;background:var(--sky1);padding:8px max(5vw,16px) 16px;box-shadow:0 10px 20px rgba(0,0,0,.2)}
+#site-nav.open{display:flex}
+.grid2,.bring{grid-template-columns:minmax(0,1fr)}
+.pass{grid-template-columns:minmax(0,1fr) 90px}
+.route b{font-size:38px}
+.photo{width:60px;height:60px;font-size:24px}}
+@media(prefers-reduced-motion:reduce){.bob{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 19v-7M10 19V5M15 19v-9M20 19v-4M3 21h18"/></symbol>
+<symbol id="i-case" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5h6v2M3 13h18"/></symbol>
+<symbol id="i-plane" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></symbol>
+<symbol id="i-tower" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M9.5 22l1-11h3l1 11M7 11h10l-1.5-4h-7zM12 7V2M6 22h12"/></symbol>
+<symbol id="i-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5c2.8 2.3 4.2 5.6 4.2 9.3L14.5 16h-5l-1.7-4.2C7.8 8.1 9.2 4.8 12 2.5z"/><circle cx="12" cy="9" r="1.6"/><path d="M9.5 16L7 19.5l3-.8M14.5 16l2.5 3.5-3-.8M12 18.5V22"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home"><i>FM</i>Federico Mamone</a>
+    <button id="menu-btn" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav id="site-nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-top">
+    <div>
+      <h1>Federico Mamone</h1>
+      <p class="lede">Aviation Management student at Jacksonville University, focused on the business side of airlines. I'm looking for a Summer 2027 internship with an airline or airport.</p>
+      <div class="cta">
+        <a class="btn primary" href="#resume">View my resume</a>
+        <a class="btn ghost" href="#contact">Contact me</a>
+      </div>
+    </div>
+    <article class="pass" aria-label="Quick facts, styled as a boarding pass">
+      <div class="pass-head"><span>Boarding pass</span><svg aria-hidden="true"><use href="#i-plane"/></svg></div>
+      <div class="pass-body">
+        <div class="route">
+          <div><b>UY</b><small>Uruguay</small></div>
+          <div class="path" aria-hidden="true"><svg><use href="#i-plane"/></svg></div>
+          <div class="to"><b>JAX</b><small>Jacksonville, FL</small></div>
+        </div>
+        <dl class="fields">
+          <div class="wide"><dt>Passenger</dt><dd>Federico Mamone</dd></div>
+          <div><dt>Track</dt><dd>Airline Management</dd></div>
+          <div><dt>Minor</dt><dd>Applied Economics</dd></div>
+          <div><dt>Graduates</dt><dd>May 2028</dd></div>
+          <div><dt>Now boarding</dt><dd>Summer 2027 internships</dd></div>
+        </dl>
+      </div>
+      <div class="stub">
+        <div class="photo" aria-hidden="true">FM</div>
+        <div class="barcode" aria-hidden="true"></div>
+        <small>Seeking internship</small>
+      </div>
+    </article>
+  </div>
+
+  <div class="scene">
+    <svg viewBox="0 0 1200 280" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Illustration of an airliner climbing over an airport, with the Sun of May from Uruguay's flag in the sky">
+      <defs>
+        <linearGradient id="belly" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d3e1f3"/></linearGradient>
+        <linearGradient id="trail" gradientUnits="userSpaceOnUse" x1="-760" y1="0" x2="-20" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".8"/></linearGradient>
+        <g id="cloud"><circle cx="-34" cy="4" r="20" fill="var(--cloud)"/><circle cx="0" cy="-8" r="28" fill="var(--cloud)"/><circle cx="34" cy="2" r="22" fill="var(--cloud)"/><rect x="-56" y="2" width="114" height="22" rx="11" fill="var(--cloud)"/><rect x="-50" y="17" width="102" height="7" rx="3.5" fill="var(--cloudsh)"/></g>
+        <path id="ray1" d="M-3.5,-33 L3.5,-33 L0,-52 Z" fill="#f7b500"/>
+        <path id="ray2" d="M0,-33 C6,-37 -6,-41 0,-45 C5,-48 -2,-50 0,-53" fill="none" stroke="#f7b500" stroke-width="3" stroke-linecap="round"/>
+      </defs>
+      <use href="#cloud" transform="translate(170 96)"/>
+      <use href="#cloud" transform="translate(700 64) scale(.55)"/>
+      <use href="#cloud" transform="translate(1085 150) scale(.8)"/>
+      <g transform="translate(880 104)">
+        <use href="#ray1"/><use href="#ray1" transform="rotate(45)"/><use href="#ray1" transform="rotate(90)"/><use href="#ray1" transform="rotate(135)"/>
+        <use href="#ray1" transform="rotate(180)"/><use href="#ray1" transform="rotate(225)"/><use href="#ray1" transform="rotate(270)"/><use href="#ray1" transform="rotate(315)"/>
+        <use href="#ray2" transform="rotate(22.5)"/><use href="#ray2" transform="rotate(67.5)"/><use href="#ray2" transform="rotate(112.5)"/><use href="#ray2" transform="rotate(157.5)"/>
+        <use href="#ray2" transform="rotate(202.5)"/><use href="#ray2" transform="rotate(247.5)"/><use href="#ray2" transform="rotate(292.5)"/><use href="#ray2" transform="rotate(337.5)"/>
+        <circle r="28" fill="#f7b500"/><circle cx="-5" cy="-5" r="19" fill="#ffd24a"/>
+      </g>
+      <path d="M0,226 C150,198 300,216 450,206 C600,196 750,216 900,204 C1020,196 1110,212 1200,202 L1200,280 L0,280 Z" fill="var(--far)"/>
+      <path d="M52,200 Q190,178 328,200 Z" fill="var(--bldg)"/>
+      <rect x="60" y="198" width="260" height="30" fill="var(--bldg)"/>
+      <rect x="72" y="206" width="236" height="9" fill="var(--glass)"/>
+      <rect x="318" y="214" width="40" height="7" fill="var(--bldg)"/>
+      <line x1="385" y1="84" x2="385" y2="108" stroke="var(--bldg)" stroke-width="3"/>
+      <circle cx="385" cy="84" r="3.5" fill="#f7b500"/>
+      <rect x="360" y="106" width="50" height="6" rx="2" fill="var(--bldg)"/>
+      <path d="M356,132 L414,132 L406,112 L364,112 Z" fill="var(--bldg)"/>
+      <rect x="367" y="116" width="36" height="10" fill="var(--glass)"/>
+      <rect x="376" y="132" width="18" height="96" fill="var(--bldg)"/>
+      <rect x="0" y="228" width="1200" height="52" fill="var(--ground)"/>
+      <rect x="0" y="244" width="1200" height="22" fill="var(--runway)"/>
+      <line x1="0" y1="255" x2="1200" y2="255" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="26 22" opacity=".85"/>
+      <line x1="6" y1="245.5" x2="1200" y2="245.5" stroke="#f7b500" stroke-width="3" stroke-dasharray="1 30" stroke-linecap="round"/>
+      <line x1="6" y1="264.5" x2="1200" y2="264.5" stroke="#f7b500" stroke-width="3" stroke-dasharray="1 30" stroke-linecap="round"/>
+      <g transform="translate(600 140) rotate(-8)">
+        <g class="bob">
+          <path d="M-14,25 L-760,25" stroke="url(#trail)" stroke-width="5" fill="none"/>
+          <path d="M-30,12 L-760,12" stroke="url(#trail)" stroke-width="3" fill="none"/>
+          <path d="M-118,-16 L-150,-72 C-151,-75 -148,-77 -145,-77 L-132,-77 L-78,-16 Z" fill="#f7b500"/>
+          <circle cx="-126" cy="-48" r="7" fill="#ffffff"/>
+          <path d="M-160,-12 C-150,-16 -130,-18 -110,-18 L112,-18 C138,-18 158,-6 162,3 C158,12 140,17 112,17 L-96,17 C-124,17 -150,6 -160,-12 Z" fill="url(#belly)"/>
+          <path d="M-146,1 L150,1" stroke="#1559c4" stroke-width="5"/>
+          <line x1="-110" y1="-7" x2="104" y2="-7" stroke="#0c2340" stroke-width="6" stroke-dasharray="1 11" stroke-linecap="round"/>
+          <rect x="114" y="-14" width="9" height="22" rx="3" fill="none" stroke="#9fb4d1" stroke-width="1.5"/>
+          <path d="M132,-11 L148,-8 L154,-2 L134,-3 Z" fill="#0c2340"/>
+          <path d="M-128,-2 L-178,8 C-180,9 -179,12 -176,12 L-112,6 Z" fill="#c4d4ea"/>
+          <path d="M18,6 L-58,44 C-61,46 -59,49 -55,49 L-40,49 L46,9 Z" fill="#cbd9ed"/>
+          <rect x="-14" y="16" width="52" height="18" rx="9" fill="#eef3fa" stroke="#b4c6de" stroke-width="1.5"/>
+          <ellipse cx="36" cy="25" rx="4" ry="8" fill="#0c2340"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<section class="band" id="about">
+  <div class="wrap about">
+    <div>
+      <h2>About me</h2>
+      <p>I'm an Aviation Management student at Jacksonville University, originally from Uruguay. I earned my student pilot license, but I realized the part of aviation I care about most is the business side: how airlines plan, operate, and keep the whole system running.</p>
+      <p>My goal is to work for an airline and help improve how that system works. Outside of class I'm into photography, spaceflight, aircraft manufacturing, and business analytics. Right now I'm looking for a Summer 2027 internship where I can learn from people who do this every day and bring my own perspective as an international, bilingual student.</p>
+    </div>
+    <ul class="bring" aria-label="What I bring">
+      <li><svg aria-hidden="true"><use href="#i-globe"/></svg><h3>Bilingual</h3><p>Native Spanish and English speaker, ready to work with teams and customers across the US and Latin America.</p></li>
+      <li><svg aria-hidden="true"><use href="#i-case"/></svg><h3>Business and economics</h3><p>Airline Management coursework backed by a minor in Applied Economics, plus economics, accounting, and statistics classes.</p></li>
+      <li><svg aria-hidden="true"><use href="#i-chart"/></svg><h3>Data and Excel</h3><p>Comfortable building dashboards and budgets in Excel and explaining what the numbers mean.</p></li>
+      <li><svg aria-hidden="true"><use href="#i-plane"/></svg><h3>Operations perspective</h3><p>Flight training as a student pilot and airport operations research give me a feel for what happens behind every departure.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band projects" id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="intro">Research and class projects I've worked on. Each one links to the full paper or file.</p>
+    <div class="grid2">
+      <article class="card">
+        <figure class="thumb"><img src="assets/hulc.jpg" alt="Our team's illustration of modular cryogenic fuel tanks docked at a fuel depot in orbit around the Moon" width="800" height="508"></figure>
+        <div class="card-body">
+          <div class="course">NASA Human Lander Challenge (HuLC), 2025</div>
+          <h3>The Cryogenic Complex: fuel tanks for the Moon</h3>
+          <p>Our five-person Jacksonville University team designed the Universal Cryogenic Storage Tank (UCST), a modular, reusable tank for liquid oxygen, liquid hydrogen, and methane. It can sit in a fuel farm on the Moon, dock at a fuel depot in lunar orbit, or clip into a lander like a battery. As the cryogenic storage systems researcher, I worked on tank materials and insulation, built our final presentation deck, and delivered part of the pitch to NASA judges in Huntsville, where we were one of 12 national finalists.</p>
+          <ul class="tags"><li>Aerospace research</li><li>NASA Artemis</li><li>National finalist</li></ul>
+          <a class="doc-btn" href="files/Mamone_HuLC_Cryogenic_Complex_Paper.pdf" target="_blank" rel="noopener">Read our technical paper (PDF)</a>
+        </div>
+      </article>
+      <article class="card">
+        <figure class="thumb paper"><img src="assets/tpa.jpg" alt="First page of my Tampa International Airport case study" width="786" height="533"></figure>
+        <div class="card-body">
+          <div class="course">AVM 102, Fall 2026</div>
+          <h3>Tampa International Airport case study</h3>
+          <p>A research paper on how Florida weather shapes operations at TPA: afternoon thunderstorms, morning fog, and hurricanes. I covered the forecasting tools airports rely on, like METAR, TAF, and terminal Doppler radar, and used Hurricane Ian as a case study. TPA suspended operations on September 27, 2022 and reopened three days later with no serious damage.</p>
+          <ul class="tags"><li>Airport operations</li><li>Aviation weather</li><li>Research</li></ul>
+          <a class="doc-btn" href="files/Mamone_TPA_Case_Study.pdf" target="_blank" rel="noopener">Read the case study (PDF)</a>
+        </div>
+      </article>
+      <article class="card">
+        <figure class="thumb paper"><img src="assets/breeze.jpg" alt="First page of my Breeze Airways regional airline analysis" width="786" height="533"></figure>
+        <div class="card-body">
+          <div class="course">AVM 102, Fall 2026</div>
+          <h3>Breeze Airways: regional airline analysis</h3>
+          <p>A full analysis of Breeze Airways, David Neeleman's fifth airline. I looked at its history, its point-to-point network built around underserved cities (about 85% of its routes have no competition), its move to an all-Airbus A220 fleet, and its workforce, safety record, finances, and partnerships.</p>
+          <ul class="tags"><li>Airline strategy</li><li>Network planning</li><li>Research</li></ul>
+          <a class="doc-btn" href="files/Mamone_Breeze_Airways_Paper.pdf" target="_blank" rel="noopener">Read the paper (PDF)</a>
+        </div>
+      </article>
+      <article class="card">
+        <figure class="thumb shot"><a href="assets/dashboard-full.jpg" target="_blank" rel="noopener" aria-label="Open the full-size dashboard screenshot"><img src="assets/dashboard.jpg" alt="My Technology Sales Dashboard in Excel, with six charts: units sold vs. profit per unit by brand, top sales reps, units sold by product and region, profit by brand and consumer segment, fastest-growing products by month, and 2026 profit vs. the 2025 goal" width="900" height="391"></a></figure>
+        <div class="card-body">
+          <div class="course">Applied Business and Economic Analysis</div>
+          <h3>Technology sales dashboard in Excel</h3>
+          <p>An interactive dashboard built from a large technology sales dataset using pivot tables, pivot charts, and slicers. It answers six business questions at a glance, from which brands earn the most per unit to how 2026 profit compares with the 2025 goal.</p>
+          <ul class="tags"><li>Excel</li><li>Pivot tables</li><li>Data analysis</li></ul>
+          <div class="btns"><a class="doc-btn" href="assets/dashboard-full.jpg" target="_blank" rel="noopener">View the dashboard</a><a class="doc-btn alt" href="files/Mamone_Technology_Sales_Dashboard.xlsx">Download the Excel file (10 MB)</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="resume">
+  <div class="wrap">
+    <h2>Resume</h2>
+    <p class="intro">My education, experience, and skills.</p>
+    <div class="doc">
+      <div>
+        <section>
+          <h3>Education</h3>
+          <div class="school">Jacksonville University, Jacksonville, FL <span>Expected May 2028</span></div>
+          <p>Bachelor of Science in Aviation Management, Airline Management track<br>Minor in Applied Economics</p>
+          <ul>
+            <li>GPA: 3.00</li>
+            <li>Student Pilot License, 73.8 hours total time</li>
+            <li>Relevant coursework: Airline Management, Aviation Physics, Flight Physiology, Microeconomics, Macroeconomics, Accounting, Elementary Statistics</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Professional experience</h3>
+          <div class="school">NASA Human Lander Forum, Huntsville, AL <span>Mar 2025 to Jul 2025</span></div>
+          <p><em>Cryogenic Storage Systems Researcher</em></p>
+          <ul>
+            <li>Researched reusable, modular cryogenic storage tanks for liquid oxygen, liquid hydrogen, and methane for Artemis Human Landing System missions.</li>
+            <li>Evaluated composite tank materials (Al-Li 2195, CFRP hybrids, stainless steel, multi-layer insulation) for thermal performance, boil-off, impact protection, and mass.</li>
+            <li>Assessed depot integration, buried lunar fuel farms, and interoperability standards for orbital refueling.</li>
+            <li>Drafted the final presentation deck and delivered 25% of the national pitch to NASA judges; team selected as 1 of 12 national finalists.</li>
+          </ul>
+        </section>
+      </div>
+      <div>
+        <section>
+          <h3>Leadership and activities</h3>
+          <div class="school">LinkCrew Leader, Volunteer <span>Aug 2022 to May 2023</span></div>
+          <p>Mentored incoming freshmen through group sessions and orientation activities, helping them settle into campus life.</p>
+          <div class="school">Spanish Honor Society, Member and President <span>Aug 2020 to May 2023</span></div>
+          <p>Led cultural activities, promoted Spanish language skills, and coordinated student-led academic support.</p>
+        </section>
+        <section>
+          <h3>Technical skills</h3>
+          <ul>
+            <li>Microsoft Office: Excel, Word, PowerPoint</li>
+            <li>Adobe: Lightroom, Photoshop, Illustrator</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Languages</h3>
+          <ul><li>Spanish (native)</li><li>English (native)</li></ul>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band contact" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>Let's connect</h2>
+      <p>I'm looking for a Summer 2027 internship with an airline or airport. If your team has an opening, or you'd just like to talk aviation, I'd love to hear from you.</p>
+    </div>
+    <div class="rows">
+      <div class="row"><div><small>Email</small><b><a href="mailto:fmamone@jacksonville.edu">fmamone@jacksonville.edu</a></b></div><button class="copy" type="button" data-copy="fmamone@jacksonville.edu">Copy</button></div>
+      <div class="row"><div><small>Based in</small><b>Jacksonville, Florida</b></div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Federico Mamone</span>
+    <span><a href="#about">About</a><a href="#projects">Projects</a><a href="#resume">Resume</a><a href="#contact">Contact</a></span>
+  </div>
+</footer>
+
+<script>
+{
+  const btn = document.getElementById('menu-btn');
+  const nav = document.getElementById('site-nav');
+  const setOpen = (open) => {
+    nav.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', String(open));
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  };
+  btn.addEventListener('click', () => setOpen(!nav.classList.contains('open')));
+  nav.addEventListener('click', (e) => { if (e.target.closest('a')) setOpen(false); });
+  document.querySelectorAll('.copy').forEach((b) => {
+    b.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(b.dataset.copy); b.textContent = 'Copied'; }
+      catch (err) { b.textContent = 'Select to copy'; }
+      setTimeout(() => { b.textContent = 'Copy'; }, 1800);
+    });
+  });
+}
+</script>
+</body>
+</html>
